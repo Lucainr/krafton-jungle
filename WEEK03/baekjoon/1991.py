@@ -44,6 +44,7 @@ def postorder(node):
     postorder(tree[node][1])    # 오른쪽 자식 순회
     print(node, end='')         # 현재 노드 출력
 
+print(tree)
 preorder('A')
 print()
 inorder('A')
