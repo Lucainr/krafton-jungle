@@ -17,10 +17,10 @@ def bfs():
     visited[1] = True
     while queue:
         current = queue.popleft()
-        for value in graph[current]:  # enumerate 제거 (불필요)
+        for value in graph[current]:
             if visited[value] == False:
                 queue.append(value)
-                visited[value] = True  # True 할당 추가
+                visited[value] = True
                 count += 1
     print(count)
 
